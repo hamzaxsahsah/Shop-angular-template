@@ -1,0 +1,17 @@
+<div class="items">
+    <app-shopitem *ngFor="let product of products"
+                  [productName]="product.productName"
+                  [productDescription]="product.productDescription"
+                  [productPrice]="product.productPrice"
+                  [buyButtonText]="product.buyButtonText"
+                  [productImageUrl]="product.productImageUrl"
+                  [productInfoTitle]="product.productInfoTitle"
+                  [sunNeeds]="product.sunNeeds"
+                  [soilNeeds]="product.soilNeeds"
+                  [zones]="product.zones"
+                  [height]="product.height"
+                  [bloomPeriod]="product.bloomPeriod"
+                  [features]="product.features">
+    </app-shopitem>
+  </div>
+  

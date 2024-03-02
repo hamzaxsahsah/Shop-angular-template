@@ -1,0 +1,35 @@
+<div id="container">
+    <div class="product-details">
+        <h1>{{ productName }}</h1>
+        <span class="hint-star star">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+        </span>
+        <p class="information">{{ productDescription }}</p>
+        <div class="control">
+            <button class="btn">
+                <span class="price">{{ productPrice }}</span>
+                <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                <span class="buy">{{ buyButtonText }}</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="product-image">
+        <img src="{{ productImageUrl }}" alt="Product Image">
+        <div class="info">
+            <h2>{{ productInfoTitle }}</h2>
+            <ul>
+                <li><strong>Sun Needs: </strong>{{ sunNeeds }}</li>
+                <li><strong>Soil Needs: </strong>{{ soilNeeds }}</li>
+                <li><strong>Zones: </strong>{{ zones }}</li>
+                <li><strong>Height: </strong>{{ height }}</li>
+                <li><strong>Blooms in: </strong>{{ bloomPeriod }}</li>
+                <li><strong>Features: </strong>{{ features }}</li>
+            </ul>
+        </div>
+    </div>
+</div>
